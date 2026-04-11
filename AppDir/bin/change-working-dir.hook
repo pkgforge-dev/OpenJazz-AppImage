@@ -1,0 +1,4 @@
+#!/bin/sh
+dir=$CONFIGDIR/openjazz
+mkdir -p "$dir"
+cd "$dir"
