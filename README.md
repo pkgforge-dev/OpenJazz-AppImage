@@ -3,11 +3,11 @@
 # OpenJazz-AppImage 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/OpenJazz-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/OpenJazz-AppImage/releases/latest)
-[![CI Build Status](https://github.com//pkgforge-dev/OpenJazz-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/OpenJazz-AppImage/releases/latest)
+[![CI Build Status](https://github.com/pkgforge-dev/OpenJazz-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/OpenJazz-AppImage/releases/latest)
 [![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/OpenJazz-AppImage)](https://github.com/pkgforge-dev/OpenJazz-AppImage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/AlisterT/openjazz/blob/master/res/unix/OpenJazz.png" width="128" />
+  <img src="https://raw.githubusercontent.com/AlisterT/openjazz/refs/heads/master/res/unix/OpenJazz.svg" width="128" />
 </p>
 
 
@@ -21,7 +21,7 @@
 
 ---
 
-AppImage made using [sharun](https://github.com/VHSgunzo/sharun) and its wrapper [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
+AppImage made using [quick-sharun](https://github.com/pkgforge-dev/Anylinux-AppImages/blob/main/useful-tools/quick-sharun.sh), which makes it extremely easy to turn any binary into a portable package reliably without using containers or similar tricks. 
 
 **This AppImage bundles everything and it should work on any Linux distro, including old and musl-based ones.**
 
