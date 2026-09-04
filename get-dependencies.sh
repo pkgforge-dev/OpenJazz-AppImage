@@ -14,10 +14,6 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano libdecor-mini
 
-# Comment this out if you need an AUR package
-#make-aur-package openjazz-git
-
-# If the application needs to be manually built that has to be done down here
 echo "Building OpenJazz..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/AlisterT/openjazz"
