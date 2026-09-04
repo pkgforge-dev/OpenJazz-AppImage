@@ -30,4 +30,4 @@ cd ./openjazz
 cmake -S ./ -B build -G Ninja \
     -DCMAKE_BUILD_TYPE=Release -DSDL_VERSION=3
 cmake --build build -j$(nproc)
-mv -v build/ ../AppDir/bin
+mv -v build/OpenJazz ../AppDir/bin
