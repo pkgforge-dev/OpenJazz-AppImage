@@ -18,11 +18,11 @@ echo "Building OpenJazz..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/AlisterT/openjazz"
 VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
-git clone "$REPO" ./openjazz
+git clone --depth 1 "$REPO" ./openjazz
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
 cd ./openjazz
-cmake -S ./ -B build -DCMAKE_BUILD_TYPE=Release -DSDL_VERSION=3
+cmake ./ -B build -DCMAKE_BUILD_TYPE=Release -DSDL_VERSION=3
 cmake --build build -j$(nproc)
 mv -v build/OpenJazz ../AppDir/bin
