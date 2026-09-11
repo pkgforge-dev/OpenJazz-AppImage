@@ -6,9 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm \
-    cmake \
-    sdl3
+pacman -Syu --noconfirm cmake sdl3
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
@@ -22,7 +20,6 @@ git clone --depth 1 "$REPO" ./openjazz
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
-cd ./openjazz
-cmake ./ -B build -DCMAKE_BUILD_TYPE=Release -DSDL_VERSION=3
+cmake -S ./openjazz -B build -DCMAKE_BUILD_TYPE=Release -DSDL_VERSION=3
 cmake --build build -j$(nproc)
-mv -v build/OpenJazz ../AppDir/bin
+mv -v build/OpenJazz ./AppDir/bin
